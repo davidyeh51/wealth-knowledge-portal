@@ -1,0 +1,90 @@
+{
+  "portal_title": "大衛人生・財富管理與人生富足知識庫門戶",
+  "portal_subtitle": "David Wealth Knowledge Portal ｜ 管顧級思維模型・無雜訊簡報系統・多源知識庫",
+  "version": "1.0.0",
+  "last_updated": "2026-10-12",
+  "github_repo": "https://github.com/davidyeh51/wealth-knowledge-portal",
+  "github_pages": "https://davidyeh51.github.io/wealth-knowledge-portal/",
+  "modules": [
+    {
+      "id": "module-hsm",
+      "status": "online",
+      "badge": "首發旗艦・完整導讀",
+      "badge_color": "emerald",
+      "title": "《快樂性感的百萬富翁》史蒂文．巴列特",
+      "subtitle": "Happy Sexy Millionaire ｜ 20 章全精華解構・12 頁無雜訊顧問簡報・心智模型庫",
+      "author": "史蒂文．巴列特 (Steven Bartlett)",
+      "category": "財富心智與人生哲學",
+      "tags": ["抵達謬誤", "無限遊戲", "技能疊加", "非對稱下注", "摩擦力工程", "橡膠球與水晶球", "戰略性放棄"],
+      "has_presentation": true,
+      "presentation_file": "happy_sexy_millionaire_zero_noise.pptx",
+      "slide_count": 12,
+      "chapter_count": 20,
+      "data_source": "data/knowledge_base.json",
+      "slides_source": "data/slides.json",
+      "description": "歐洲最年輕上市企業創辦人兼頂尖播客主持人史蒂文．巴列特，從破產低谷到身價過億後提煉出的 20 個顛覆常規心智法則。打破『有錢、性感、成名就會幸福』的假象，建立抗脆弱的人生富足模型。"
+    },
+    {
+      "id": "module-investment-zhang",
+      "status": "planned",
+      "badge": "已排程・架構連動",
+      "badge_color": "blue",
+      "title": "張瀟雨・個人投資課",
+      "subtitle": "建立終身受益的底層投資思維與資產配置全天候防線",
+      "author": "張瀟雨",
+      "category": "資產配置與市場週期",
+      "tags": ["資產配置", "週期思維", "逆向投資", "市場先生", "風險管理", "長期主義"],
+      "has_presentation": false,
+      "presentation_file": null,
+      "slide_count": 16,
+      "chapter_count": 30,
+      "data_source": null,
+      "slides_source": null,
+      "description": "連動工作區《张潇雨·个人投资课》，解構資本市場運行本質、經典投資大師哲學與個人財富增長的科學資產配置模型。即將接入無雜訊顧問簡報導讀。"
+    },
+    {
+      "id": "module-insurance-li",
+      "status": "planned",
+      "badge": "已排程・架構連動",
+      "badge_color": "purple",
+      "title": "李璞・給忙碌者的個人保險課",
+      "subtitle": "用精算思維打造人生第一道不可擊穿的安全氣囊",
+      "author": "李璞",
+      "category": "家庭保障與風險防護",
+      "tags": ["保險四象限", "精算思維", "防禦性資產", "重疾與醫療", "槓桿防護"],
+      "has_presentation": false,
+      "presentation_file": null,
+      "slide_count": 10,
+      "chapter_count": 15,
+      "data_source": null,
+      "slides_source": null,
+      "description": "連動工作區《李璞, 給忙碌者的個人保險課》，掃除保險買錯、買貴、買漏的認知誤區，以精簡四象限模型建立家庭資產防護網。即將接入無雜訊顧問簡報導讀。"
+    },
+    {
+      "id": "module-munger-models",
+      "status": "planned",
+      "badge": "典範擴充庫",
+      "badge_color": "amber",
+      "title": "查理．蒙格《窮查理的普通常識》",
+      "subtitle": "跨學科多元思維模型網格與人類誤判心理學",
+      "author": "查理．蒙格 (Charlie Munger)",
+      "category": "多元思維模型",
+      "tags": ["多元思維模型", "反過來想", "檢查清單", "人類誤判心理學", "能力圈", "雙軌分析"],
+      "has_presentation": false,
+      "presentation_file": null,
+      "slide_count": 18,
+      "chapter_count": 25,
+      "data_source": null,
+      "slides_source": null,
+      "description": "波克夏傳奇副董事長查理．蒙格畢生智慧提煉，透過物理學、生物學、工程學與心理學的跨領域思維格柵，提供高階決策底層導航。"
+    }
+  ],
+  "extensibility_instructions": {
+    "how_to_add_new_module": [
+      "1. 在 `wealth-knowledge-portal/data/` 目錄新增對應的書籍或課程資料 JSON（如 `book_name.json`）。",
+      "2. 執行 `/zero-noise-pptx` 本地腳本產出對應的 16:9 `.pptx` 簡報檔案並放置於本目錄。",
+      "3. 在 `catalog.json` 的 `modules` 陣列中新增一個節點，設定 `title`, `presentation_file`, `tags` 等屬性。",
+      "4. 門戶網站前端將自動動態讀取 `catalog.json`，完成全站搜尋索引自動納入、卡片渲染與簡報檔案連動下載！"
+    ]
+  }
+}
